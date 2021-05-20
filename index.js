@@ -41,8 +41,9 @@ const checkYuGiOh = n => {
     }
   }// checkYuGiOh end
 
-//changeFahrToCelsius
-const changeFahrToCelsius = n => {
+
+//convertFahrToCelsius
+const convertFahrToCelsius = n => {
     x = n;
     Number(n);
     if(x instanceof Array) {
@@ -61,5 +62,5 @@ const changeFahrToCelsius = n => {
     }
   }// changeFahrToCelsius end
 
-  changeFahrToCelsius()
+  convertFahrToCelsius()
   checkYuGoHi()
