@@ -44,23 +44,23 @@ const checkYuGiOh = n => {
 
 //convertFahrToCelsius
 const convertFahrToCelsius = n => {
-    x = n;
-    Number(n);
-    if(x instanceof Array) {
-      return `${n} is not a valid number but a \ an array`
-    }
-    else if(x instanceof Object) {
-      return `${n} is not a valid number but a \ an object`
-    }
-    else if(typeof(x) === "string") {
-      return `${x} is not a valid number but a \ an ${typeof(x)}`
-    }
-    else {
-      let c = (n - 32) * (5/9);
-      let d = c.toFixed(4);
-      return d;
-    }
-  }// changeFahrToCelsius end
+  x = n;
+  Number(n);
+  if(x instanceof Array) {
+    return `${JSON.stringify(n)} is not a valid number but a \ an array`
+  }
+  else if(x instanceof Object) {
+    return `${JSON.stringify(n)} is not a valid number but a \ an object`
+  }
+  else if(typeof(x) === "string") {
+    return `${x} is not a valid number but a \ an ${typeof(x)}`
+  }
+  else {
+    let c = (n - 32) * (5/9);
+    let d = c.toFixed(4);
+    return d;
+  }
+}// changeFahrToCelsius end
 
   convertFahrToCelsius()
   checkYuGoHi()
